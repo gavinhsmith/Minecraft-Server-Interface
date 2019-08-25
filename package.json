@@ -1,0 +1,23 @@
+{
+  "name": "mcserver",
+  "version": "1.0.0",
+  "description": "MC Server Program",
+  "main": "msi.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gavin H. Smith",
+  "license": "MIT",
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "colors": "^1.3.3",
+    "deasync": "^0.1.15",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "gamedig": "^2.0.14",
+    "got": "^9.6.0",
+    "http": "0.0.0",
+    "https": "^1.0.0",
+    "socket.io": "^2.2.0"
+  }
+}

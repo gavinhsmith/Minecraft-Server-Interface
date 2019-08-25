@@ -1,0 +1,42 @@
+#acc_master {
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%,0);
+	width: 300px;
+	border: 1px solid black;
+	background: white;
+	padding: 8px;
+	margin-bottom: 8px;
+	border-radius: 20px;
+}
+.accContainer:last-child {
+	border-bottom: 0px solid black;
+	margin-bottom: 0px;
+}
+.accContainer {
+	border-bottom: 1px solid black;
+	margin-bottom: 10px;
+}
+
+pre {
+	background: white;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	padding: 10px;
+	border-radius: 20px;
+}
+
+body, html {
+	background: url('/background');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center; 
+	background-size: 100% auto;
+}
+@media screen and (device-width: 360px) {
+  body,html {
+	background-size: 200% auto;
+  }
+}

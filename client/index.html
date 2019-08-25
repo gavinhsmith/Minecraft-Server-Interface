@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang='en-us'>
+	<head>
+		<meta charset="UTF-8">
+		<title id="page_title">MSI</title>
+		<script defer src="https://onikuryh.github.io/minecraft-text-js/js/minecraft_text.min.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+		<script defer src="socket.io.js"></script>
+		<script defer src="main.js"></script>
+		<link rel="stylesheet" type="text/css" href="main.css">
+		<link rel="stylesheet" type="text/css" href="pixelminers.css">
+		<link rel="stylesheet" type="text/css" href="query.css">
+		<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+		<link rel="manifest" href="/favicon/site.webmanifest">
+	</head>
+	<body>
+		<div class="container pageCenter" id="server_list">
+			<h2>Minecraft Server Interface (MSI)</h2>
+			<br>
+			<h3>Servers</h3>
+			<br>
+			<div id="server_list_internal"></div>
+		</div>
+		<div class="container pageCenter" id="msi_main" style="display: none;">
+			<h2 id="msi_title">MinecraftServer</h2>
+			<h4 id="msi_version">1.0.0</h4>
+			<div id="msi_console" class="container"></div>
+			<input class="topmargin" id="msi_enter_command" placeholder="Command"></input>
+			<div style="display: flex;" id="msi_close_button_cont">
+				<button class="topmargin" id="close_server_button" style="background: #f44; margin-right: 8px;" onclick="closeServer()">Close Server</button>
+				<img id="loading_gif" class="topmargin" src="load.gif" style="opacity: 0;">
+			</div>
+		</div>
+		<div id="err" style="display: none;">
+			<h2>An Error has Occurred</h2>
+			<br>
+			<code id="err_text">Error Text</code>
+			<br>
+			<br>
+			<br>
+			<br>
+			<button onclick="hideErr()" style="min-height: 30px; background: #f44;">Close</button>
+		</div>
+		<a onclick="logout()" href="javascript:void 0;" style="margin-top: 9px; background: white; padding: 8px;">Log Out</a>
+		<div id="msi_cover">
+			<input type="password" id="msi_password" placeholder="Password"></input>
+		</div>
+	</body>
+</html>

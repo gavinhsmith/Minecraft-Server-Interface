@@ -1,0 +1,3 @@
+module.exports = function (title,filedata) {
+	return `<!DOCTYPE html><html lang="en-us"><head><script defer src="/p_main.js"></script><link rel="stylesheet" href="/p_main.css"><meta charset="UTF-8"><title>${title}</title><link rel="stylesheet" type="text/css" href="/pixelminers.css"></head><body><pre id="check_login" style="display: none; word-wrap: break-word; white-space: pre-wrap; font-style: Arial">${filedata}</pre></body></html>`;
+};

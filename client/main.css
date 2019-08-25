@@ -1,0 +1,138 @@
+body, html {
+	font-family: 'pixel_miners';
+	font-size: 90%;
+	background: url('/background');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center; 
+	background-size: 100% auto;
+}
+input {
+	font-family: 'pixel_miners';
+	border: 1px solid black;
+	background: white;
+	padding-left: 14px;
+	padding-right: 14px;
+	height: 50px;
+	font-size: 20px;
+}
+#server_list_internal {
+	overflow-y: scroll;
+	border: 1px solid black;
+	height: 400px;
+}
+.pageCenter {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
+.container {
+	border: 1px solid black;
+	background: white;
+	padding: 14px;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0); 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+::-webkit-scrollbar-thumb:hover ::-webkit-scrollbar {
+	width: 7px;
+}
+#msi_console {
+	width: 700px;
+	height: 400px;
+	background: black;
+	color: white;
+	overflow-y: scroll;
+	overflow-x: scroll;
+}
+#loading_gif {
+	width: 50px;
+	height: 50px;
+}
+#server_list {
+	width: 200px;
+	text-align: center;
+}
+#msi_enter_command {
+	width: 700px;
+	color: white;
+	background: black;
+}
+.topmargin {
+	margin-top: 8px;
+}
+h3, h2 {
+	margin: 0;
+}
+button {
+	width: 150px;
+	min-height: 50px;
+	font-family: 'pixel_miners';
+	background: black;
+	color: white;
+	border: none;
+}
+button.serverSelect {
+	border-bottom: 5px solid #a5a5a5;
+	transition: border-bottom 0.2s, min-height 0.2s, margin-top 0.2s;
+}
+button.serverSelect:hover {
+	border-bottom: 4px solid #a5a5a5;
+	min-height: 49px;
+	margin-top: 1px;
+}
+button.serverSelect:active {
+	border-bottom: 0px solid #a5a5a5;
+	min-height: 45px;
+	margin-top: 5px;
+}
+button.serverSelect:first-child {
+	margin-top: 8px;
+}
+#err {
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding: 8px;
+	background: #F99;
+	z-index: 11;
+	color: #f44;
+}
+#msi_cover {
+	display: block;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	background: url("/background");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center; 
+	background-size: 100% auto;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+}
+#msi_password {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
