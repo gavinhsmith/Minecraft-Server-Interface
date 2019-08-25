@@ -79,6 +79,7 @@ If you want to get some raw JSON data about the current running server, go to th
  - If you want to access your minecraft servers outside your network, you must forward the respective ports and make your servers ip static.
  - Due to an error in the Windows 10 UWP apps LoopBack, you cannot access local bedrock servers (on the same network as your PC) on Windows 10. To get around this, people will exempt the Minecraft Windows 10 Edition from the loopback: open `powershell` and run the command `CheckNetIsolation LoopbackExempt -a -n="Microsoft.MinecraftUWP_8wekyb3d8bbwe"`
  - Whenever you have to mess with your internet or pc settings, you run the risk of damaging your pc, to proceed with caution.
+ - MSI only works on Windows.
 ## Contribute
 Feel free to fork the project and add your own twists!
 
