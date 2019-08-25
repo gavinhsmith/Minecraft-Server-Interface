@@ -12,6 +12,7 @@ const ff = require('./fileforwarder.js');
 const port = (process.argv[2]) ? Number(process.argv[2]) : 600;
 const gamedig = require('gamedig');
 const got = require('got');
+const ipAdd = require('./ipaddress.js');
 let server = null;
 let server_proc = null;
 let server_active = false;
@@ -47,7 +48,7 @@ app.use(function (req,res) {
 	if (req.url == '/json/status') {
 		if (server_active) {
 			if (server.platform == 'java') {
-				got('https://mcapi.us/server/status?ip=96.60.13.193&port='+server.port, { json: false }).then(response => {
+				got('https://mcapi.us/server/status?ip='+ipAdd+'&port='+server.port, { json: false }).then(response => {
 					res.write(""+response.body);
 					res.end();
 				}).catch(error => {
@@ -244,7 +245,7 @@ function startServerHandler(name) {
 	};
 };
 
-const msi_password = 'TheGrate202';
+const msi_password = require('./password.js');
 
 if (process.argv[3] == 'start') {
 	if (process.argv[4]) {
@@ -325,7 +326,7 @@ io.on('connection',function (client) {
 		};
 	});
 	client.on('req.serverStatusJSON',function () {
-		got('https://mcapi.us/server/status?ip=96.60.13.193&port='+((server != null | undefined) ? server.port : 25565), { json: true }).then(response => {
+		got('https://mcapi.us/server/status?ip='+ipAdd+'&port='+((server != null | undefined) ? server.port : 25565), { json: true }).then(response => {
 			client.emit('res.serverStatusJSON',response.body);
 		}).catch(error => {
 			throw error;

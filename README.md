@@ -2,6 +2,10 @@
 Minecraft Server Interface (MSI) is a Node.js application that allows you to easily manage your Minecraft Java Edition and Bedrock Edition Servers.
 ## Set the access password
 open the `password.js` file and change the *password_here* to your password.
+## Set the public IP
+ 1. Get your public IP (google *my ip adress*)
+ 2. open the `ipaddress.js` file
+ 2. place the ip where you see *ip_here*
 ## Install
  1. Get the latest version of [Node.js](https://nodejs.org/en/).
  2. Clone this repository.
@@ -67,6 +71,8 @@ the urls
  are also valid (given a server is started and you are logged in).
  
 If you want to get some raw JSON data about the current running server, go to the url `http://localhost:600/json/status`
+
+*Note: Raw JSON only works for Java Edition Servers*
 
 ## Notes
 
