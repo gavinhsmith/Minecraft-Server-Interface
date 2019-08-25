@@ -3,9 +3,9 @@ Minecraft Server Interface (MSI) is a Node.js application that allows you to eas
 ## Set the access password
 open the `password.js` file and change the *password_here* to your password.
 ## Set the public IP
- 1. Get your public IP (google *my ip adress*)
- 2. open the `ipaddress.js` file
- 2. place the ip where you see *ip_here*
+ 1. Get your public IP (google *my ip adress*).
+ 2. open the `ipaddress.js` file.
+ 2. place the ip where you see *ip_here*.
 ## Install
  1. Get the latest version of [Node.js](https://nodejs.org/en/).
  2. Clone this repository.
@@ -16,9 +16,11 @@ open the `password.js` file and change the *password_here* to your password.
 ### Adding the server
 When creating a server, make a folder (with no spaces) inside the servers folder. This will be the "key" for your server.
 
-Download the server software for your respective platform and rename the .jar ore .exe file to your folder name
+Download the server software for your respective platform and rename the .jar ore .exe file to your folder name.
 
-*Note: as long as that .jar file for your java server takes the same console arguments as the offical minecraft java server software, it should work.*
+Place your downloaded server files into your newly-created folder.
+
+*Note: as long as that .jar file for your java server takes the same console arguments as the offical minecraft java server software, it should work*.
 
 *Note 2: Currently, the only bedrock server software supported is PocketMine-MP. You must use that for a bedrock server.*
 ### Defining your server to MSI
@@ -31,11 +33,9 @@ The arguments for the new Server are as followed (In order):
  - Display Name: *String* ("GrateCraft", ect.)
  - Version: *String* ("1.12.2", ect.)
  - Platform: *String* (MUST BE "java" or "bedrock")
- - Server Type: *String* (CraftBukkit, Spiggot, Vanilla; enter *null* to
-   default to Vanilla)
+ - Server Type: *String* (CraftBukkit, Spiggot, Vanilla; enter *null* to default to Vanilla)
  - Server Folder: *String* (Enter your servers folder)
- - Server Port: *Interger* (If your server runs on a non-default port,
-   enter it here; enter *null* to default to the port for your platform)
+ - Server Port: *Interger* (If your server runs on a non-default port, enter it here; enter *null* to default to the port for your platform)
 
 example: 
 
@@ -47,9 +47,9 @@ example:
 ## Starting MSI
 as of right now, MSI only works on windows, so you MacOSX and Linux users will have to wait.
 
-open your console in the repository and run the command `msi`
+open your console in the repository and run the command `msi`.
 
-The MSI server will have started and you can now access it at `http://localhost:600/`
+The MSI server will have started and you can now access it at `http://localhost:600/`.
 
 ## Using MSI
 ### Basic
@@ -59,7 +59,7 @@ Click one of your servers (Black buttons with quick information).
 
 To run a command, click on the *Command* box, enter your command, and press *enter*.
 
-Click *stop server* to stop the server
+Click *stop server* to stop the server.
 
 ### Others
 the urls
@@ -70,9 +70,9 @@ the urls
  `http://localhost:600/banned-players` 
  are also valid (given a server is started and you are logged in).
  
-If you want to get some raw JSON data about the current running server, go to the url `http://localhost:600/json/status`
+If you want to get some raw JSON data about the current running server, go to the url `http://localhost:600/json/status`.
 
-*Note: Raw JSON only works for Java Edition Servers*
+*Note: Raw JSON only works for Java Edition Servers*.
 
 ## Notes
 
