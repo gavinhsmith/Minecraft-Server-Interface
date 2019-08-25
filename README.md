@@ -63,12 +63,12 @@ Click *stop server* to stop the server.
 
 ### Others
 the urls
- `http://localhost:600/properties`
- `http://localhost:600/ops`
- `http://localhost:600/banned-ips`
- `http://localhost:600/whitelist`
- `http://localhost:600/banned-players` 
- are also valid (given a server is started and you are logged in).
+`http://localhost:600/properties`
+`http://localhost:600/ops`
+`http://localhost:600/banned-ips`
+`http://localhost:600/whitelist`
+`http://localhost:600/banned-players` 
+are also valid (given a server is started and you are logged in).
  
 If you want to get some raw JSON data about the current running server, go to the url `http://localhost:600/json/status`.
 
