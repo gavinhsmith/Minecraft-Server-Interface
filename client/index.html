@@ -27,7 +27,7 @@
 			<h2 id="msi_title">MinecraftServer</h2>
 			<h4 id="msi_version">1.0.0</h4>
 			<div id="msi_console" class="container"></div>
-			<input class="topmargin" id="msi_enter_command" placeholder="Command"></input>
+			<input type="msi_enter_command" class="topmargin" id="msi_enter_command" name="msi_enter_command" placeholder="Command"></input>
 			<div style="display: flex;" id="msi_close_button_cont">
 				<button class="topmargin" id="close_server_button" style="background: #f44; margin-right: 8px;" onclick="closeServer()">Close Server</button>
 				<img id="loading_gif" class="topmargin" src="load.gif" style="opacity: 0;">
@@ -45,6 +45,7 @@
 		</div>
 		<a onclick="logout()" href="javascript:void 0;" style="margin-top: 9px; background: white; padding: 8px;">Log Out</a>
 		<div id="msi_cover">
+			<input type="email" style="display: none;"></input>
 			<input type="password" id="msi_password" placeholder="Password"></input>
 		</div>
 	</body>
