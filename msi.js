@@ -211,11 +211,19 @@ function startServerHandler(name) {
 				{cwd: 'servers/'+server.folder}
 			);
 		} else if (server.platform == 'bedrock') {
-			server_proc = proc.spawn(
-				"cmd.exe",
-				['/c', 'start.cmd'],
-				{cwd: 'servers/'+server.folder}
-			);
+			if (server.type == "PocketMine-MP") {
+				server_proc = proc.spawn(
+					"cmd.exe",
+					['/c', 'start.cmd'],
+					{cwd: 'servers/'+server.folder}
+				);
+			} else if (server.type == "Vanilla") {
+				server_proc = proc.spawn(
+					server.folder+".exe",
+					[],
+					{cwd: 'servers/'+server.folder}
+				);
+			};
 		};
 		
 		console.log(server_proc.pid);

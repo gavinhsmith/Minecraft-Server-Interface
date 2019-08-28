@@ -22,7 +22,7 @@ Place your downloaded server files into your newly-created folder.
 
 *Note: as long as that .jar file for your java server takes the same console arguments as the offical minecraft java server software, it should work*.
 
-*Note 2: Currently, the only bedrock server software supported is PocketMine-MP. You must use that for a bedrock server.*
+*Note 2: Currently, the only bedrock server software supported is PocketMine-MP or The Offical Server Software. You must use thoes for a bedrock server.*
 ### Defining your server to MSI
 open the `servers.js`
 
