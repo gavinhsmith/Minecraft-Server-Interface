@@ -16,7 +16,7 @@ open the `password.js` file and change the *password_here* to your password.
 ### Adding the server
 When creating a server, make a folder (with no spaces) inside the servers folder. This will be the "key" for your server.
 
-Download the server software for your respective platform and rename the .jar ore .exe file to your folder name.
+Download the server software for your respective platform and rename the .jar or .exe file to your folder name.
 
 Place your downloaded server files into your newly-created folder.
 
@@ -37,7 +37,7 @@ The arguments for the new Server are as followed (In order):
  - Server Folder: *String* (Enter your servers folder)
  - Server Port: *Interger* (If your server runs on a non-default port, enter it here; enter *null* to default to the port for your platform)
 
-example: 
+example:
 
     `module.exports = {
 		GrateCraft: new Server('GrateCraft','1.14.4','java','CraftBukkit',null,null),
@@ -68,10 +68,10 @@ the urls
 `http://localhost:600/ops`
 `http://localhost:600/banned-ips`
 `http://localhost:600/whitelist`
-`http://localhost:600/banned-players` 
+`http://localhost:600/banned-players`
 
 are also valid (given a server is started and you are logged in).
- 
+
 If you want to get some raw JSON data about the current running server, go to the url `http://localhost:600/json/status`.
 
 *Note: Raw JSON only works for Java Edition Servers*.
@@ -85,4 +85,4 @@ If you want to get some raw JSON data about the current running server, go to th
 ## Contribute
 Feel free to fork the project and add your own twists!
 
-Want me to fix/add something? send something in the issue tab! 
+Want me to fix/add something? send something in the issue tab!
