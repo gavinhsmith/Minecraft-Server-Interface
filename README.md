@@ -39,11 +39,11 @@ The arguments for the new Server are as followed (In order):
 
 example:
 
-    `module.exports = {
+    module.exports = {
 		GrateCraft: new Server('GrateCraft','1.14.4','java','CraftBukkit',null,null),
 		SinglePlayer: new Server('SinglePlayer','1.14.4','java','Vanilla',null,7000),
 		GrateCraftMobile: new Server('GrateCraft Mobile','1.12.0','bedrock','PocketMine-MP','GrateCraftMobile',null)
-	};`
+	};
 ## Starting MSI
 as of right now, MSI only works on windows, so you MacOSX and Linux users will have to wait.
 
