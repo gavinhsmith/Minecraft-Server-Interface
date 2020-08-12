@@ -16,5 +16,3 @@ function Server(ip) {
 		document.body.appendChild(pre);
 	});
 };
-
-Server('96.60.13.193');

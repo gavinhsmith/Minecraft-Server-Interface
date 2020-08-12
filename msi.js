@@ -6,13 +6,18 @@ const app = express();
 const http = require('http').createServer(app);
 const io = require('socket.io')(http);
 const colors = require('colors');
-const server_list = require('./servers.js');
 const fs = require('fs');
 const ff = require('./fileforwarder.js');
 const port = (process.argv[2]) ? Number(process.argv[2]) : 600;
 const gamedig = require('gamedig');
 const got = require('got');
-const ipAdd = require('./ipaddress.js');
+
+const config = JSON.parse(fs.readFileSync("config.json"));
+const ipAdd = config.ip_address;
+const msi_password = config.password;
+
+const server_list = require('./servers.js');
+
 let server = null;
 let server_proc = null;
 let server_active = false;
@@ -200,7 +205,11 @@ function startServerHandler(name) {
 	if (server_active == false) {
 		minecraft_console.log("[MSI SERVER]: "+'Starting server "'+name+'"');
 		server_active = true;
-		server = server_list[name];
+		for (let k = 0; k < server_list; k++) {
+			if (name == server_list[k].folder) {
+				server = server_list[k];
+			};
+		};
 		
 		renameConsoleWindow('MSI ^| '+server.name);
 		
@@ -252,8 +261,6 @@ function startServerHandler(name) {
 		});
 	};
 };
-
-const msi_password = require('./password.js');
 
 if (process.argv[3] == 'start') {
 	if (process.argv[4]) {
