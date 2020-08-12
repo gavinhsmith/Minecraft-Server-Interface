@@ -16,7 +16,7 @@ const config = JSON.parse(fs.readFileSync("config.json"));
 const ipAdd = config.ip_address;
 const msi_password = config.password;
 
-const server_list = require('./servers.js');
+const server_list = JSON.parse(fs.readFileSync("servers.json"));
 
 let server = null;
 let server_proc = null;

@@ -1,3 +1,10 @@
 [
-    
+    {
+        "name": "Displayed Server Name",
+        "version": "Server Version",
+        "type": "Server Software",
+        "platform": "Minecraft Platform",
+        "folder": "Server Folder",
+        "port": "Server Port"
+    }
 ]
